@@ -17,6 +17,11 @@ A full-stack MERN application for restaurant reservations with a modern UI.
 - Database: MongoDB
 - Styling: CSS3
 
+## Live Demo
+
+- Frontend: [https://restaurant-reservation-taniya.vercel.app](https://restaurant-reservation-taniya.vercel.app)
+- Backend API: [https://restaurant-reservation-api.onrender.com](https://restaurant-reservation-api.onrender.com)
+
 ## Prerequisites
 
 - Node.js (v14 or higher)
@@ -28,8 +33,8 @@ A full-stack MERN application for restaurant reservations with a modern UI.
 1. Clone the repository:
 
 ```bash
-git clone <your-repository-url>
-cd <repository-name>
+git clone https://github.com/Taniya0613/restaurant-reservation.git
+cd restaurant-reservation
 ```
 
 2. Install backend dependencies:
@@ -77,11 +82,27 @@ The application will be available at:
 
 ## Deployment
 
-The application can be deployed on:
+This project is deployed using:
 
-- Frontend: Vercel, Netlify, or GitHub Pages
-- Backend: Render, Railway, or Heroku
-- Database: MongoDB Atlas
+- Frontend: [Vercel](https://vercel.com)
+- Backend: [Render](https://render.com)
+- Database: [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+
+## Environment Variables
+
+### Frontend (.env)
+
+```
+VITE_API_URL=https://restaurant-reservation-api.onrender.com
+```
+
+### Backend (.env)
+
+```
+PORT=4000
+FRONTEND_URL=https://restaurant-reservation-taniya.vercel.app
+MONGO_URI=your_mongodb_connection_string
+```
 
 ## License
 
