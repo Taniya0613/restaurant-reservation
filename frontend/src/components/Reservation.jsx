@@ -5,6 +5,8 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
+const API_URL = "https://restaurant-reservation-api.onrender.com";
+
 const Reservation = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -18,7 +20,7 @@ const Reservation = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/reservation/send",
+        `${API_URL}/api/v1/reservation/send`,
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
